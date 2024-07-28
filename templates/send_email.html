@@ -1,0 +1,43 @@
+<!-- send_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login_style.css' %}">
+    <title>Email Sending Tool</title>
+</head>
+<body>
+    <header>
+        <h1>Email Sending Tool</h1>
+    </header>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Send Email</h2>
+        
+        <label for="recipient_email">Recipient Email</label>
+        <input type="email" id="recipient_email" name="recipient_email" required>
+        
+        <label for="email_subject">Subject</label>
+        <input type="text" id="email_subject" name="email_subject" required>
+        
+        <label for="email_content">Content</label>
+        <textarea id="email_content" name="email_content" required></textarea>
+        
+        <label for="email_image">Attach File</label>
+        <input type="file" id="email_image" name="email_image">
+        
+        <button type="submit">Send Email</button>
+        
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </form>
+    <footer>
+        <p>&copy; 2024 Sujit Bhogil. All rights reserved.</p>
+    </footer>
+</body>
+</html>

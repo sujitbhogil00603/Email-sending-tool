@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login_style.css' %}">
+    <title>Email Sending Tool</title>
+</head>
+<body>
+    <header>
+        <h1>Email Sending Tool</h1>
+    </header>
+    <form method="POST">
+        {% csrf_token %}
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+    </form>
+    <footer>
+        <p>&copy; 2024 Sujit Bhogil. All rights reserved.</p>
+    </footer>
+</body>
+</html>
