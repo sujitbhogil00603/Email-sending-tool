@@ -2,7 +2,7 @@ Email Sending Tool
 
 LOGIN:
 
-![image](https://github.com/user-attachments/assets/3c7c6f56-7c7b-47e4-a3b5-395d19ad87be)
+![image](https://github.com/user-attachments/assets/b3993f37-ee74-4121-bcef-225e7b671bf2)
 
 
 EMAIL TESTING PAGE:
