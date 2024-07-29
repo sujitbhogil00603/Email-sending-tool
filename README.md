@@ -5,7 +5,7 @@ LOGIN:
 ![image](https://github.com/user-attachments/assets/b3993f37-ee74-4121-bcef-225e7b671bf2)
 
 
-EMAIL TESTING PAGE:
+EMAIL  SENDING PAGE:
 
 ![image](https://github.com/user-attachments/assets/5a396f7c-efc7-4db6-9023-25ebe5a0aa9e)
 
