@@ -14,7 +14,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
-# Set up logging
+#logging
 logging.basicConfig(level=logging.DEBUG)
 
 @csrf_protect
@@ -56,7 +56,7 @@ def send_email_view(request):
             'image_name': sanitized_name if email_image else None,
         })
 
-        # Log HTML content
+        # Log
         logging.debug(f"HTML content: {html_content}")
 
         # Create the email message
@@ -78,7 +78,7 @@ def send_email_view(request):
                 mime_img_attachment.add_header('Content-Disposition', 'attachment', filename=sanitized_name)
                 msg.attach(mime_img_attachment)
 
-                # Log MIME image headers
+                # Log
                 logging.debug(f"Image Content-Disposition: attachment; filename={sanitized_name}")
 
         # Create a secure SSL context
