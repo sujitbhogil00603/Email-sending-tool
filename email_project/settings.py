@@ -8,12 +8,12 @@ ssl._create_default_https_context = ssl._create_unverified_context
 SESSION_COOKIE_AGE = 1209600  # 2 weeks
 
 # Email configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.adopt.email'
-EMAIL_PORT = 587
+EMAIL_BACKEND = ''
+EMAIL_HOST = ''
+EMAIL_PORT = 
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'support@adopt.email'
-EMAIL_HOST_PASSWORD = 'hDthqFv1'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
