@@ -26,6 +26,13 @@
         <label for="email_image">Attach File</label>
         <input type="file" id="email_image" name="email_image">
         
+        <label for="email_template">Select Email Template:</label>
+        <select name="email_template" required>
+            <option value="template1">Template 1</option>
+            <option value="template2">Template 2</option>
+        </select><br><br>
+
+        
         <button type="submit">Send Email</button>
         
         {% if messages %}
