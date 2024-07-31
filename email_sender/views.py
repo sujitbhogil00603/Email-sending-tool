@@ -98,7 +98,7 @@ def send_email_view(request):
         context.verify_mode = ssl.CERT_NONE
 
         try:
-            with smtplib.SMTP('mail.adopt.email', 587) as server:
+            with smtplib.SMTP('emial host name', port_number) as server:
                 server.starttls(context=context)  # Secure the connection
                 server.login(from_email, password)
                 server.sendmail(from_email, recipient_email, msg.as_string())
